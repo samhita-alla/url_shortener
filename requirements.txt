@@ -3,3 +3,6 @@ flask_migrate
 flask_sqlalchemy
 psycopg2
 flask-script
+gunicorn
+Flask-Heroku
+psycopg2-binary
