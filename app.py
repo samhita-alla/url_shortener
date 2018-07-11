@@ -4,7 +4,7 @@ from flask_script import Manager
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.schema import Sequence
 from flask_migrate import Migrate, MigrateCommand
-from flask_ext_heroku import Heroku
+from flask_ext.heroku import Heroku
 
 import string
 try:
