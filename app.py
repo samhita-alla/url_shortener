@@ -26,6 +26,7 @@ host = 'http://localhost:5000/'
 app.config['DEBUG'] = True
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://localhost/urlsdb'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+heroku = Heroku(app)
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 manager = Manager(app)

@@ -4,3 +4,4 @@ flask_sqlalchemy
 psycopg2
 flask-script
 gunicorn
+Flask-Heroku
