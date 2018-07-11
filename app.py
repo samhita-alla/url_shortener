@@ -24,7 +24,7 @@ import base64
 
 # Assuming urls.db is in your app root folder
 app = Flask(__name__)
-host = 'http://localhost:5000/'
+host = 'https://url-shortner3.herokuapp.com/'
 app.config['DEBUG'] = True
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
