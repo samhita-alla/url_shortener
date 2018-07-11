@@ -4,6 +4,7 @@ from flask_script import Manager
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.schema import Sequence
 from flask_migrate import Migrate, MigrateCommand
+from flask.ext.heroku import Heroku
 
 import string
 try:
@@ -24,8 +25,9 @@ import base64
 app = Flask(__name__)
 host = 'http://localhost:5000/'
 app.config['DEBUG'] = True
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://localhost/urlsdb'
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://localhost/urlsdb'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+heroku = Heroku(app)
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 manager = Manager(app)
