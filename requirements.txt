@@ -4,5 +4,6 @@ flask_sqlalchemy
 psycopg2
 flask-script
 gunicorn
+eventlet
 Flask-Heroku
 psycopg2-binary
